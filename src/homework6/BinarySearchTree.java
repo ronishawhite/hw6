@@ -98,6 +98,11 @@ successsor.right = deleleNode.right;
 }
 return successsor;
 }
+public void insert(int id){
+Node newNode = new Node(id);
+if(root==null){
+root = newNode;
+return;
 
 
 
