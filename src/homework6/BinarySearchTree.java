@@ -123,4 +123,11 @@ return;
 }
 }
 }
-
+public void display(Node root){
+if(root!=null){
+display(root.left);
+System.out.print(" " + root.data);
+display(root.right);
+}
+}
+public static 
