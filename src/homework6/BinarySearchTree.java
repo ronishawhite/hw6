@@ -103,6 +103,16 @@ Node newNode = new Node(id);
 if(root==null){
 root = newNode;
 return;
+}
+Node current = root;
+Node parent = null;
+while(true){
+parent = current;
+if(id<current.data){ 
+current = current.left;
+if(current==null){
+parent.left = newNode;
+return;
 
 
 
