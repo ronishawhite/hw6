@@ -80,6 +80,15 @@ parent.right = current.right;
 	} 
 	return true; 
 	}
+public Node getSuccessor(Node deleleNode){
+Node successsor =null;
+Node successsorParent =null;
+Node current = deleleNode.right;
+while(current!=null){
+successsorParent = successsor;
+successsor = current;
+current = current.left;
+}
 
 
 
