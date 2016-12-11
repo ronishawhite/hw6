@@ -113,6 +113,14 @@ current = current.left;
 if(current==null){
 parent.left = newNode;
 return;
-
-
+}
+}else{
+current = current.right;
+if(current==null){
+parent.right = newNode;
+return;
+}
+}
+}
+}
 
