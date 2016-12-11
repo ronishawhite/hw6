@@ -89,6 +89,15 @@ successsorParent = successsor;
 successsor = current;
 current = current.left;
 }
+//check if successor has the right child, it cannot have left child for sure
+//if it does have the right child, add it to the left of successorParent.
+//successsorParent
+if(successsor!=deleleNode.right){
+successsorParent.left = successsor.right;
+successsor.right = deleleNode.right;
+}
+return successsor;
+}
 
 
 
